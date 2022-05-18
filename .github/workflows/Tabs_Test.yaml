@@ -3,9 +3,9 @@ name: Get modified tabs
 on: [pull_request]
 
 jobs:
-  build:
+  find-changed-files:
     runs-on: ubuntu-latest
-    name: modified_data
+    name: modified-data
     steps:
       - uses: actions/checkout@v2
         with:
